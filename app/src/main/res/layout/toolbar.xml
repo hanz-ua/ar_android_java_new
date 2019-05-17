@@ -1,0 +1,18 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:contentInsetStart="0dp"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_container"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </Toolbar>
+</merge>

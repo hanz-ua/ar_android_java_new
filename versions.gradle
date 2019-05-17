@@ -1,0 +1,51 @@
+ext.versions = [
+        // Version
+        versionMajor             : 0,
+        versionMinor             : 1,
+        versionCode              : 1,
+
+        // Android Versions
+        compileSdk               : 27,
+        targetSdk                : 27,
+        minSdk                   : 21,
+        buildTools               : '27.0.3',
+
+        // Gradle Versions
+        android_gradle_plugin    : '3.0.1',
+        retrolambda_gradle_plugin: '3.7.0',
+        google_services_plugin   : '3.0.0',
+        maven_gradle_plugin      : '1.4.1',
+        bintray_gradle_plugin    : '1.7.1',
+
+        // Dependency Versions
+        materialedittext         : '2.1.4',
+        supportLibrary           : '27.1.1',
+        retrofit                 : '2.3.0',
+        retrofit_adapter_rxjava  : '1.0.0',
+        retrofit_converter_gson  : '2.3.0',
+        okhttp                   : '3.8.0',
+        dagger                   : '2.2',
+        dagger_compiler          : '2.2',
+        rxAndroid                : '2.0.1',
+        rxJava                   : '2.1.1',
+        joda_time                : '2.8.2',
+        glide                    : '3.8.0',
+        play_services            : '11.4.2',
+        aws_services             : '2.2.+',
+        room_persistence_lib     : '1.0.0',
+        guava                    : '24.0-android',
+        signature                : '1.2.1',
+        circle_image_view        : '2.2.0',
+        facebook                 : '4.32.0',
+        eventbus                 : '3.1.1',
+        // Aar Versions
+        rxpermissions            : '0.9.4@aar',
+        ompvo                    : 'v1.46',
+
+        // Testing dependencies4
+        jUnit                    : '4.12',
+        espresso                 : '2.2.2',
+        robolectric              : '3.2.2',
+        testRunner               : '0.4.1',
+
+]
