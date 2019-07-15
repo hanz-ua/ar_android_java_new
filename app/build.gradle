@@ -1,0 +1,113 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.bvblogic.examplearbvb"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            res {
+                srcDirs = [
+                        'src/main/res',
+                        'src/main/res/layout/activities',
+                        'src/main/res/layout/fragments',
+                        'src/main/res/layout/views',
+                        'src/main/res/layout/adapters',
+                        'src/main/res/layout/dialogs'
+                ]
+            }
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:design:28.0.0'
+    implementation "com.android.support:appcompat-v7:$versions.supportLibrary"
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+    annotationProcessor "org.androidannotations:androidannotations:4.6.0"
+    implementation "org.androidannotations:androidannotations-api:4.6.0"
+
+    implementation "com.squareup.retrofit2:retrofit:2.3.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.3.0"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$versions.retrofit_adapter_rxjava"
+    implementation "io.reactivex.rxjava2:rxandroid:$versions.rxAndroid"
+    implementation "io.reactivex.rxjava2:rxjava:$versions.rxJava"
+    implementation "com.rengwuxian.materialedittext:library:$versions.materialedittext"
+
+
+    implementation "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.9.1"
+    implementation "com.google.guava:guava:18.0"
+    implementation "com.squareup.okhttp3:okhttp:3.11.0"
+    implementation "com.squareup.retrofit2:converter-scalars:2.3.0"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.10"
+    implementation "com.google.dagger:dagger:2.11"
+    compileOnly "javax.annotation:jsr250-api:1.0"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.0"
+    implementation "com.rengwuxian.materialedittext:library:$versions.materialedittext"
+    api 'tk.zielony:carbon:0.15.3'
+    implementation 'br.com.simplepass:loading-button-android:1.14.0'
+
+    implementation 'com.airbnb:deeplinkdispatch:3.1.1'
+    annotationProcessor 'com.airbnb:deeplinkdispatch-processor:3.1.1'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    //implementation 'com.airbnb.android:paris:1.2.0'
+    implementation 'com.github.rubensousa:gravitysnaphelper-compat:2.0'
+    implementation 'com.github.antonKozyriatskyi:CircularProgressIndicator:1.2.2'
+    implementation 'net.cachapa.expandablelayout:expandablelayout:2.9.2'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.mindorks:paracamera:0.2.2'
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+    implementation 'com.github.qiujayen:sticky-layoutmanager:1.0.1'
+
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
+    implementation "android.arch.persistence.room:rxjava2:1.1.1"
+}
