@@ -1,8 +1,13 @@
 package com.bvblogic.examplearbvb.fragment;
 
 
+import android.support.v7.widget.RecyclerView;
+
 import com.bvblogic.examplearbvb.R;
 import com.bvblogic.examplearbvb.bean.login.LoginBeanView;
+import com.bvblogic.examplearbvb.bean.login.LoginBeanView_;
+import com.bvblogic.examplearbvb.bean.user.ProviderBeanUser;
+import com.bvblogic.examplearbvb.bean.user.ProviderBeanUser_;
 import com.bvblogic.examplearbvb.db.domain.User;
 import com.bvblogic.examplearbvb.db.presenter.UserPresenter;
 import com.bvblogic.examplearbvb.fragment.core.BaseFragment;
@@ -11,6 +16,7 @@ import com.bvblogic.examplearbvb.mvp.core.ToolBarById;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.ViewById;
 
 import java.util.Random;
 
@@ -33,6 +39,7 @@ public class SplashFragment extends BaseFragment {
         user.setName("Yura1");
         userPresenter.saveUser(user);
         userPresenter.getAllUser();
+
     }
 
 }

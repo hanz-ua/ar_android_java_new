@@ -6,12 +6,16 @@ import com.bvblogic.examplearbvb.api.model.Error;
 import com.bvblogic.examplearbvb.api.model.Token;
 import com.bvblogic.examplearbvb.api.presenter.LoginPresenter;
 import com.bvblogic.examplearbvb.bean.login.core.LoginBean;
+import com.bvblogic.examplearbvb.db.presenter.UserPresenter;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EBean;
 
 @EBean
 public class LoginBeanView extends LoginBean {
+
+    public LoginBeanView() {
+    }
 
     @Override
     public void init() {

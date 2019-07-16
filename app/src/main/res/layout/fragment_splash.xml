@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/carbon_white"
     android:orientation="vertical">
 
     <include
@@ -11,25 +11,23 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="?actionBarSize"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize">
 
-        <ImageView
-            android:id="@+id/icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:src="@mipmap/ic_launcher" />
 
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv"
+            android:layout_height="match_parent" />
         <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/icon"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:fontFamily="@font/sofia_pro_semi_bold"-->
-            <!--android:text="@string/builder_base"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:textSize="30sp" />-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/icon"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:fontFamily="@font/sofia_pro_semi_bold"-->
+        <!--android:text="@string/builder_base"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="30sp" />-->
     </RelativeLayout>
 
 </RelativeLayout>

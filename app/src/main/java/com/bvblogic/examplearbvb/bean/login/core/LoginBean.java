@@ -31,6 +31,6 @@ public abstract class LoginBean extends BeanAPI<Token> {
     public void init() {
         loginDeps = DaggerLoginDeps.builder().networkModule
                 (new NetworkModule(new File(activity.getCacheDir(), "responses"),
-                "http://class-music.herokuapp.com/", activity)).build();
+                        "http://class-music.herokuapp.com/", activity)).build();
     }
 }

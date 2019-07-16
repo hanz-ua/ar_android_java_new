@@ -41,6 +41,15 @@ public class MainActivityManagerUI extends BaseMainActivityManagerUI {
                                 .setCustomAnimations(0, android.R.anim.fade_out));
                 break;
             }
+            
+            case NEW_FRAGMENT:{
+                // TODO: 15.07.2019 add fragment 
+            }
+
+            case NEW_NEW:
+            {
+
+            }
         }
     }
 
